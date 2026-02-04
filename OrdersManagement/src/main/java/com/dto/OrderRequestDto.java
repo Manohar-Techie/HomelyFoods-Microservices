@@ -1,0 +1,25 @@
+package com.dto;
+
+import java.util.List;
+
+import com.model.OrderItems;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+public class OrderRequestDto {
+	
+	private long userId;
+
+	private long restaurantId;
+	
+	private double orderPrice;
+	
+	private List<OrderItemsRequestDto> orderItems;
+
+}
