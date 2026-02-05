@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 
-@FeignClient(name="ResturantManagement")
+@FeignClient(name="RestaurentManagement")
 public interface RestaurantClient {
-	@GetMapping("/resturants/getRestaurantName/{Id}")
+	@GetMapping("/restaurants/getRestaurantName/{Id}")
 	public String getRestaurantName(@PathVariable (name="Id") Long restaurantId);
 
 }

@@ -21,7 +21,7 @@ import com.model.Restaurant;
 import com.service.RestaurantService;
 
 @RestController
-@RequestMapping("/resturants")
+@RequestMapping("/restaurants")
 public class ResturantController {
 	
 
